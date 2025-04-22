@@ -1,0 +1,21 @@
+# Cloudflare Pages Deployment Configuration
+
+name = "au-pair-agency"
+compatibility_date = "2023-01-01"
+compatibility_flags = []
+workers_dev = true
+
+[build]
+command = "pnpm run build"
+output_directory = ".next"
+
+[site]
+bucket = ".next"
+
+[env.production]
+name = "au-pair-agency"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "au_pair_agency_db"
+database_id = "production"
