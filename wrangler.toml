@@ -4,6 +4,8 @@ name = "au-pair-agency"
 compatibility_date = "2023-01-01"
 compatibility_flags = []
 workers_dev = true
+pages_build_output_dir = ".next"
+
 
 [build]
 command = "pnpm run build"
